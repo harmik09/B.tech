@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #div1{
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <p >Mouse Event:<span id="event">none</span></p>
+    <div id="div1" onclick="eventFun('click')" onmouseover="eventFun('Mouse Hover')" ondblclick="eventFun('Double Clicked')">
+
+    </div>
+
+    <script>
+        // var div1 = document.getElementById("div1");
+        function eventFun(e){
+            var event = document.getElementById("event");
+            event.innerHTML=e;
+                 
+        }
+    
+
+            // div1.addEventListener(over,eventFun);
+            // div1.addEventListener(click,eventFun);
+            // div1.addEventListener(dbclick,eventFun);
+            // div1.addEventListener(mouseup,eventFun);
+            // div1.addEventListener(mousedown,eventFun);
+    </script>
+</body>
+</html></html>
